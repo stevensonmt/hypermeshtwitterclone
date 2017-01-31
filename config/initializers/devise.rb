@@ -247,9 +247,9 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  config.omniauth :github, '6613cf67c5dff3031e7b', '8005a006dd4c19170fb805952898ee7c1f3b4294', scope: 'user'
-  config.omniauth :facebook, '782989028525562', '620c18206ddb1c86fc76e7fdb94726ee', scope: 'user'
-  config.omniauth :google, '941146303732-l8d3kmhjuftgerpsi30dsl61ghihakg2.apps.googleusercontent.com', 'qfIr8EKt-uFJVFSXlUa7O34r', scope: 'user'
+  config.omniauth :github, '6613cf67c5dff3031e7b', '8005a006dd4c19170fb805952898ee7c1f3b4294', scope: 'user', callback_url: "http://localhost:3000/users/auth/github/callback"
+  config.omniauth :facebook, '782989028525562', '620c18206ddb1c86fc76e7fdb94726ee', scope: 'user', callback_url: "Google: http://localhost:3000/users/auth/facebook/callback"
+  config.omniauth :google, '941146303732-l8d3kmhjuftgerpsi30dsl61ghihakg2.apps.googleusercontent.com', 'qfIr8EKt-uFJVFSXlUa7O34r', scope: 'user', callback_url: "Google: http://localhost:3000/users/auth/google/callback"
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
