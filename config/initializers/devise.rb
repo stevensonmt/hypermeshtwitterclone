@@ -247,7 +247,7 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  config.omniauth :github, '6613cf67c5dff3031e7b', '8005a006dd4c19170fb805952898ee7c1f3b4294', scope: 'user', callback_url: "http://localhost:3000/users/auth/github/callback" #https://github.com/settings/applications/473789 to update callback url
+  config.omniauth :github, '6613cf67c5dff3031e7b', '8005a006dd4c19170fb805952898ee7c1f3b4294', scope: 'user'#, callback_url: "http://localhost:3000/users/auth/github/callback" #https://github.com/settings/applications/473789 to update callback url
 
   # config.omniauth :facebook, '782989028525562', '620c18206ddb1c86fc76e7fdb94726ee', scope: 'user', callback_url: "Google: http://localhost:3000/users/auth/facebook/callback"
   # config.omniauth :google, '941146303732-l8d3kmhjuftgerpsi30dsl61ghihakg2.apps.googleusercontent.com', 'qfIr8EKt-uFJVFSXlUa7O34r', scope: 'user', callback_url: "Google: http://localhost:3000/users/auth/google/callback"
@@ -268,9 +268,9 @@ Devise.setup do |config|
   #     mount MyEngine, at: '/my_engine'
   #
   # The router that invoked `devise_for`, in the example above, would be:
-  # config.router_name = :react_router
+  # config.router_name = :rr
   #
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
-  config.omniauth_path_prefix = '/rr/users/auth'
+  # config.omniauth_path_prefix = '/rr/users/auth'
 end
