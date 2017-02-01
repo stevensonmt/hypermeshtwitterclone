@@ -71,3 +71,12 @@ gem 'opal-rails'
 gem 'opal-browser'
 gem 'hyper-react'
 gem 'therubyracer', platforms: :ruby
+gem 'hyper-router'
+gem 'hyper-mesh'
+gem 'react-router-rails', '~>0.13.3'
+
+
+# Devise for user management
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-github'
