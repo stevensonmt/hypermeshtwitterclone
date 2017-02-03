@@ -249,8 +249,11 @@ Devise.setup do |config|
   # up on your models and hooks.
   config.omniauth :github, '6613cf67c5dff3031e7b', '8005a006dd4c19170fb805952898ee7c1f3b4294', scope: 'user'#, callback_url: "http://localhost:3000/users/auth/github/callback" #https://github.com/settings/applications/473789 to update callback url
 
-  # config.omniauth :facebook, '782989028525562', '620c18206ddb1c86fc76e7fdb94726ee', scope: 'user', callback_url: "Google: http://localhost:3000/users/auth/facebook/callback"
-  # config.omniauth :google, '941146303732-l8d3kmhjuftgerpsi30dsl61ghihakg2.apps.googleusercontent.com', 'qfIr8EKt-uFJVFSXlUa7O34r', scope: 'user', callback_url: "Google: http://localhost:3000/users/auth/google/callback"
+  config.omniauth :facebook, '782989028525562', '620c18206ddb1c86fc76e7fdb94726ee'#, scope: 'user'#, callback_url: "Google: http://localhost:3000/users/auth/facebook/callback"
+  config.omniauth :google_oauth2, '941146303732-l8d3kmhjuftgerpsi30dsl61ghihakg2.apps.googleusercontent.com', 'lFZlscdrD3XjrHAS7WLJRqmF', prompt: 'consent', name: 'google'#, callback_url: "Google: http://localhost:3000/users/auth/google/callback"
+
+  config.omniauth :twitter, 'ldMweGOzRap4rm3wIEdms5Ggq', 'qsrskW64gjmzF0jMB2p9dn0AnrLU2qmU3lH7D0EmWYrWZuLp9o'
+
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
